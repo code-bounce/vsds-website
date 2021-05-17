@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.mobile__location{
+    height: 100vh;
+    .back__btn{
+        position: absolute;
+        left:3vw;
+        top:3vw;
+        .btn{
+            background-color: white;
+            color: black;
+        }
+    }
+    .gmap{
+        width: 100vw;
+        height: 100vh;
+        .marker{
+            display: flex;
+            color: azure;
+            font-size: 3vw;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            .icon{
+                color: rgb(196, 0, 0);
+            }
+        }
+        .mobile__locations__cards{
+            position: absolute;
+            display: flex;
+            bottom: 0;
+            min-width: 100vw;
+            width: 100%;
+            margin: 3vw;
+            .card{ 
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                border-radius: 2vw;
+                min-height: 40vw;
+                padding: 2vw;
+                width: 100vw;
+                .address__title{
+                    padding: 1vw;
+                    display: flex;
+                    align-items: center;
+                    font-size: 4vw;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    .icon{
+                        margin-right: 1vw;
+                        color: #eb4a4a;
+                        font-size: 5vw;
+                    }
+                }
+                .address__content{
+                    margin-left: 2vw;
+                    color: rgb(124, 122, 122);
+                    font-size: 3vw;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+                }
+                .btn__group{
+                    margin-top: 2vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .location__btn{
+                        background-color: #1a2eb4;
+                        color: #ffffff;
+                        padding: 1vw 4vw;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 300;
+                        border-radius: 10vw;
+                        text-transform: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .contact{
+                        background-color: #ffffff;
+                        color: #1a2eb4;
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

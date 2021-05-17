@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+.mobile__yus{
+    margin-top: 5vw;
+    //background-color: #E6F2FA;
+    padding: 4vw 0;
+    .mobile__yus__head{
+        font-weight: 800;
+        font-size: 6vw;
+        font-family: 'Lato', sans-serif;
+        margin-left: 3vw;
+        padding: 6vw 0 2vw 0;
+    }
+    .swiper{
+        margin-left: 3vw;
+        .slide{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 2vw;
+            padding: 5vw 3vw;
+            border-radius: 4vw;
+            height: 20vh;
+            box-shadow: -1px 3px 4px rgba(76, 92, 235,0.3);
+            .image{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                svg,img{
+                    width: 15vw;
+                    height: 15vw;
+                    fill: #1d7def;
+                }
+            }
+            .slide__head{
+                font-family: 'Raleway', sans-serif;
+                font-size: 4.5vw;
+                font-weight: 500;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+.mobile__courses{
+    padding: 6vw 0;
+    .mobile__courses__head{
+        font-size: 7vw;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+        padding: 3vw 0 0 3vw;
+        color: #3a416f;
+    }
+    .course__pricing{
+        padding: 5vw 2vw;
+        border-radius: 6vw 6vw 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .course{
+            margin-top: 3vw;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 3vw;
+            padding: 4vw 3vw;
+            .middle{
+                flex: 3;
+                .middle__head{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 5vw;
+                    font-weight: 700;
+                    color: #3a416f;
+        
+                }
+                .middle__price{
+                    font-family: 'Lato', sans-serif;
+                    margin-top: 3vw;
+                    color: #1d7def;
+                    width: 100px;
+                    padding: .5vw;
+                    text-align: center;
+                    border-radius: 3vw;
+                }
+            }
+            .right{
+                flex: .5;
+                .icon__btn{
+                    width: 10vw;
+                    height: 10vw;
+                    background-color: white;
+                    box-shadow: 0 3px 4px rgba(83, 85, 238, 0.3);
+                    .icon{
+                        width: 5vw;
+                        height: 5vw;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+.drawerdiv{
+    display: flex;
+}
+.form__view{
+    width: auto;
+    height: auto;
+    .toast{
+        background-color: aqua;
+        .toast__content{
+            .toast__success{
+                font-size: 5vw;
+                font-weight: 800;
+            }
+        }
+    }
+    .form__details{
+        background-color: #ffffff;
+        border-radius: 2vw 2vw 0 0;
+        height: 100%;
+        padding-top: 4vw;
+        .divide{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5vw;
+            .divider{
+                padding: .8vw;
+                width: 100px;
+                border-radius: 3vw;
+            }
+        }
+        .mobile__form__head{
+            padding: 3vw;
+            font-size: 5vw;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            align-items: center;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .input__field{
+                width: 90vw;
+                padding: 4vw 2vw ;
+                margin: 2vw;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                font-size: 3.5vw;
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+                background-color: rgb(223, 225, 226);
+            }
+            textarea{
+                padding: 3vw 2vw 6vw 2vw;
+                margin: 2vw;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                font-size: 3.5vw;
+                width: 90vw;
+                font-family: 'Lato', sans-serif;
+                font-weight: 600;
+                background-color: rgb(223, 225, 226);
+            }
+            .check{
+                display: flex;
+                margin: 2vw;
+                align-items: flex-start;
+                input{
+                    margin-right: 1vw;
+                }
+                .terms{
+                    font-family: 'Lato', sans-serif;
+                    font-size: 3.5vw;
+                    font-weight: 700;
+                }
+            }
+            .form__btn{
+                width: 90vw;
+                background-color: #1d7def;
+                margin: 4vw 2vw 2vw 2vw;
+                color: #ffffff;
+                font-family: 'Lato', sans-serif;
+                padding: 3vw 1vw;
+                margin-bottom: 4vw;
+                font-weight: 500;
+            }
+        }
+    }
+}

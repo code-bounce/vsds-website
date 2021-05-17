@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+.mobile__home{
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+    .mobile__float{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        a{
+            background-color: rgb(238, 56, 56);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            color: #fff;
+            padding: .8em 1em;
+            font-size: 14px;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .home__view{
+        margin-top: 3vw;
+        .home__view__content{
+            padding: 3.5vw;
+            
+            .head__top{
+                font-family: 'Lato', sans-serif;
+                font-size: 8vw;
+                padding-bottom: 2vw;
+                font-weight: 800;
+                color: #3a416f;
+            }
+            .head__bottom{
+                font-family: 'Raleway', sans-serif;
+                font-size: 8vw;
+                font-weight: 800;
+                color: #3a416f;
+            }
+            .body{
+                font-family: 'Raleway', sans-serif;
+                padding-top: 4vw;
+                font-weight: 500;
+                font-size: 4.2vw;
+                color: #3a416f;
+            }
+            .btn{
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                background-color: #2a2e53;
+                margin-top: 8vw;
+                color: #ffffff;
+                text-transform: none;
+                padding: 4vw 3vw;
+                width: 100%;
+                border-radius: 2vw;
+                font-size: 3.5vw;
+                display: flex;
+                align-items: center;
+                box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+            }
+        }
+    }
+    .home__image{
+        width: 100vw;
+        height: 80vw;
+        margin-top: 3vw;
+        background-image: url('../../assets/main__illustration.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

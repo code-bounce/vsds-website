@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+.navbar{
+    height: 8vh;
+    box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(93, 100, 148, 0.2);
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    .nav{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: space-between;
+        padding: 0 1vw;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                height: 30px;
+                width: 30px;
+            }
+            .logo__name{
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+        .nav__items{
+            display: flex;
+            align-items: center;
+            min-width: 40vw;
+            justify-content: space-evenly;
+            .nav__link{
+                a{
+                    text-decoration: none;
+                    color: #938ab8;
+                    font-size: 0.8vw;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    &:hover{
+                        color: #5468ff;
+                    }
+                }
+            }
+            .contact{
+                background-color: rgb(42, 46, 83);
+                width: 120px;
+                border-radius: 0.3em;
+                box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+                a{
+                    //color: #3131f5;
+                    text-transform: uppercase;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    color: #fff;
+                    font-size: .8vw;
+                }
+                &:hover{
+                    background-color: #3131f5;
+                    a{
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .navbar{
+        display: none;
+    }
+}

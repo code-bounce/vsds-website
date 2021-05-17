@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0 0 0;
+    background-color: rgb(33, 36, 61);
+    .about__top{
+        width: 80%;
+        display: flex;
+        .about__left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw 1vw 0 1vw;
+            .about__head{
+                font-size: 2vw;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-family: 'Poppins', sans-serif;
+                color: #fff;
+            }
+            .about__body{
+                font-size: 0.9vw;
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                padding-top: 1.5vw;
+                width: 90%;
+                color: #fff;
+            }
+            .new{
+                padding-top: 1vw;
+            }
+        }
+        .about__right{
+            flex: 1;
+            padding: 2vw 1vw 0 1vw;
+            .quote__icon{
+                height: 17%;
+                width: 17%;
+            }
+            hr{
+                width: 150px;
+                height: 5px;
+                background-color: #fff;
+                border: none;
+                margin-top: .5vw;
+                margin-bottom: 1.5vw;
+            }
+            .quote{
+                font-size: 2vw;
+                width: 80%;
+                font-family: 'Poppins', sans-serif;
+                color: #fff;
+            }
+            .quote__sub{
+                padding-top: 1vw;
+                font-family: 'Caveat', cursive;
+                font-size: 2vw;
+                color: #5468ff;
+            }
+        }
+    }
+    .about__bottom{
+        width: 100%;
+        height: 22vw;
+        .swiper{
+            height: 100%;
+            .slide{
+                background-color: blue;
+                width: 30%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

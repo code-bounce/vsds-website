@@ -1,0 +1,16 @@
+.home{
+  .mobile__view{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .home{
+    .desktop__view{
+      display: none;
+    }
+    .mobile__view{
+      display: block;
+    }
+  }
+}
