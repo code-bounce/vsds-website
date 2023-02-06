@@ -43,7 +43,7 @@ function Form(props) {
             );
             reset();
             setInterval(() => {props.handler(false)}, 5000)
-            fetch("https://formsubmit.co/ajax/akhilrajktt@gmail.com", {
+            fetch("https://formsubmit.co/ajax/managermdsktp@vishnucars.in", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
