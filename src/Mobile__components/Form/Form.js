@@ -6,6 +6,7 @@ import './Form.scss'
 import {db} from '../../Firebase'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -16,6 +17,7 @@ function Form(props) {
         </Drawer>
     );
     function List() {
+        const router = useHistory()
         var today = new Date();
         var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
         var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -41,6 +43,19 @@ function Form(props) {
             );
             reset();
             setInterval(() => {props.handler(false)}, 5000)
+            fetch("https://formsubmit.co/ajax/akhilrajktt@gmail.com", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                ...data,
+                date,
+                time
+            })
+        })
+        router.push("/thankYou")
         }
         return(
             <div className="form__view">
