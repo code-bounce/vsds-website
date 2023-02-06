@@ -6,6 +6,7 @@ import Logo from '../../assets/mainlogo.svg'
 
 
 function Navbar() {
+    const [show, setShow] = useState(false)
     return (
         <div className="navbar">
             <div className="nav">
@@ -19,7 +20,7 @@ function Navbar() {
 
                     <Button className="nav__link" ><Link to='/book_lesson'>Book Lesson</Link></Button>
                     <Button className="nav__link" ><Link to="/blog">Blog</Link></Button>
-                    <Button className="nav__link contact"><a href='tel:+919710635120'>Contact</a></Button>
+                    <Button onClick={() => setShow(true)} className="nav__link contact"><a href='tel:+919710635120'>{show ? "7339333708" : "Contact"}</a></Button>
                 </div>
             </div>
         </div>

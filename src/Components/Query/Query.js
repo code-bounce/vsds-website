@@ -6,9 +6,11 @@ import DialpadIcon from '@material-ui/icons/Dialpad';
 import { Button } from '@material-ui/core'
 import {db} from '../../Firebase'
 import { ToastContainer, toast } from 'react-toastify';
+import { useHistory } from "react-router-dom"
 import 'react-toastify/dist/ReactToastify.css';
 
 function Query() {
+    const router = useHistory()
     const { register, handleSubmit, reset, errors } = useForm()
     var today = new Date();
     var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
@@ -23,6 +25,19 @@ function Query() {
         );
         reset();
         notify()
+        fetch("https://formsubmit.co/ajax/managermdsktp@vishnucars.in", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                ...data,
+                date,
+                time
+            })
+        })
+        router.push("/thankYou")
     }
     const notify = () => toast.success('🦄 Wow so easy!, We Will get in touch SOON.', {
         position: "top-center",

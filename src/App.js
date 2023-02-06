@@ -11,6 +11,7 @@ import Locate from './Components/Location/Locate';
 import NewBlog from './Components/NewBlog/NewBlog';
 import Blog from './Components/NewBlog/Blogs/Blog';
 import Query from './Components/Query/Query';
+import Thankyou from './Components/Thankyou';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/blog" component={NewBlog} />
           <Route path='/blog_content' component={Blog} />
           <Route path='/book_lesson' component={Query} />
+          <Route path="/thankYou" component={Thankyou} />
         </Switch>
       </Router>
     </div>
